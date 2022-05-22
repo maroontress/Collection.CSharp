@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Namespace Name="Maroontress.Collection">
+  <Docs>
+    <summary>
+      This namespace provides the implementation for some collection classes,
+      which we don't need frequently but sometimes.
+    </summary>
+  </Docs>
+</Namespace>

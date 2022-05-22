@@ -1,0 +1,10 @@
+/.vs/
+/*/bin/
+/*/obj/
+/Collection/dcx/
+/Collection.Test/TestResults/
+/Coverlet-Html/
+/Collection/html/
+/Collection/Properties/
+/Collection.Test/Properties/
+*.csproj.user

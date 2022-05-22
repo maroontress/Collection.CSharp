@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <Nullable>enable</Nullable>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>dcx/Maroontress.Collection.xml</DocumentationFile>
+    <AssemblyName>Maroontress.Collection</AssemblyName>
+    <RootNamespace>Maroontress.Collection</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Maroontress.Collection</PackageId>
+    <PackageVersion>$(Version)</PackageVersion>
+    <Authors>Tomohisa Tanaka</Authors>
+    <PackageProjectUrl>https://maroontress.github.io/Collection-CSharp/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maroontress/Collection.CSharp</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Maroontress.Collection is a C# class library containing some collection classes.</Description>
+    <PackageReleaseNotes>See https://maroontress.github.io/Collection-CSharp/releasenotes.html</PackageReleaseNotes>
+    <Copyright>Copyright (c) 2022 Maroontress Fast Software</Copyright>
+    <PackageTags></PackageTags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <Version>1.0.0.0</Version>
+    <RepositoryType />
+    <Company>Maroontress Fast Software</Company>
+    <PackageLicenseFile>COPYRIGHT.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Maroontress\Collection\.namespace.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Maroontress\Collection\.namespace.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="nuget\readme.txt">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+    <Content Include="nuget\COPYRIGHT.txt">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+    <Content Include="nuget\LEGAL_NOTICES.txt">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleChecker" Version="1.0.27" PrivateAssets="all" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all" />
+    <PackageReference Include="System.Collections.Immutable" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
